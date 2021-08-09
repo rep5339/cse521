@@ -22,6 +22,19 @@
 #include "mm.h"
 #include "memlib.h"
 
+/* Helper functions */
+
+void put(char* location, int data);
+unsigned int pack(unsigned int num1, unsigned int num2);
+unsigned int get_valid(unsigned int data);
+unsigned int get_data(unsigned int data);
+char* get_next(char * current);
+char* get_prev(char * current);
+void set_next(char * current, unsigned int next);
+void set_prev(char * current, unsigned int prev);
+unsigned int min(unsigned int a, unsigned int b);
+
+
 /*
  * If you want to enable your debugging output and heap checker code,
  * uncomment the following line. Be sure not to have debugging enabled
